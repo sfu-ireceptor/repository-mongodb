@@ -6,12 +6,12 @@ upon the [official mongo docker
 image](https://hub.docker.com/_/mongo/) with additional customizations
 specific to iReceptor.
 
-##Deployments
+## Deployments
 
 It is expected that repository-mongodb will be deployed	as one
 component of an iReceptor data node.
 
-##Configuration Procedure
+## Configuration Procedure
 
 Refer to the [official mongo docker
 image](https://hub.docker.com/_/mongo/) about additional
