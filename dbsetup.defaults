@@ -1,0 +1,20 @@
+//
+// MongoDB initialization
+//
+
+var serviceAccount = '';
+var serviceSecret = '';
+var guestAccount = '';
+var guestSecret = '';
+var dbname = 'v1public';
+
+var conn = new Mongo();
+var db = conn.getDB("admin");
+
+// Create service account
+db.createUser({ user: serviceAccount, pwd: serviceSecret, roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] });
+db.grantRolesToUser(serviceAccount, [ { "role" : "userAdmin" , "db" : dbname } ]);
+db.grantRolesToUser(serviceAccount, [ { "role" : "readWrite" , "db" : dbname } ]);
+
+// Create guest account
+db.createUser({ user: guestAccount, pwd: guestSecret, roles: [ { role: "read", db: dbname } ] });
