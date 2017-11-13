@@ -22,3 +22,8 @@ configurations settings.
 [Docker](https://www.docker.com) needs to be installed either directly on the host machine or within a VM.
 
 **Configuring repository-mongodb**
+
+Copy the dbsetup.defaults to dbsetup.js to provide customization of the Mongo instance.
+
+Make sure NOT to accidently commit the dbsetup file with usernames and passwords into the 
+git repository (note: we put dbsetup.js into the .gitignore of the repo as a failsafe!)
