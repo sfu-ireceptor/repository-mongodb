@@ -23,7 +23,13 @@ configurations settings.
 
 **Configuring repository-mongodb**
 
-Copy the dbsetup.defaults to dbsetup.js to provide customization of the Mongo instance.
+Copy the dbsetup.defaults to dbsetup.js and edit accordingly,to provide customization of the Mongo instance, namely:
+
+```
+cd repository-mongodb
+cp dbsetup.defaults dbsetup.js
+emacs dbsetup.js
+```
 
 Make sure NOT to accidently commit the dbsetup file with usernames and passwords into the 
 git repository (note: we put dbsetup.js into the .gitignore of the repo as a failsafe!)
