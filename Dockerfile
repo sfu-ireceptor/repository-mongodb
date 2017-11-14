@@ -1,8 +1,8 @@
 # Base MongoDB image
 FROM mongo:3
 
-LABEL maintainer.first=VDJServer <vdjserver@utsouthwestern.edu> \
-      maintainer.second=iReceptor <ireceptor@sfu.ca>
+LABEL maintainer.first="VDJServer <vdjserver@utsouthwestern.edu>" \
+      maintainer.second="iReceptor <ireceptor@sfu.ca>"
 
 # PROXY: uncomment these and define if building behind a proxy
 # These are UTSW proxy settings
