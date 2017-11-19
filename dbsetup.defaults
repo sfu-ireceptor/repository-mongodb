@@ -1,12 +1,16 @@
 //
 // MongoDB initialization
 //
-
+////////////////////////////////////////////////
+// The following variables should be set by you
+////////////////////////////////////////////////
 var serviceAccount = '';
 var serviceSecret = '';
 var guestAccount = '';
 var guestSecret = '';
-var dbname = 'v1public';
+var dbname = 'ireceptor';
+
+// No need to change anything below this comment line!
 
 var conn = new Mongo();
 var db = conn.getDB("admin");
