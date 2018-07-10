@@ -21,4 +21,6 @@ db.grantRolesToUser(serviceAccount, [ { "role" : "userAdmin" , "db" : dbname } ]
 db.grantRolesToUser(serviceAccount, [ { "role" : "readWrite" , "db" : dbname } ]);
 
 // Create guest account
-db.createUser({ user: guestAccount, pwd: guestSecret, roles: [ { role: "read", db: dbname } ] });
+db.createUser({ user: guestAccount, pwd: guestSecret, roles: [ { role: "readWrite", db: dbname } ] });
+
+// TODO: Create indexes
