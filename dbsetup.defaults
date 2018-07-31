@@ -41,7 +41,7 @@ function addQueryPlans(db, collectionName) {
             planCacheSetFilter: collectionName,
             query: { "ir_project_sample_id": 4 },
             indexes: [
-                { "ir_project_sample_id": 1 }
+                { ir_project_sample_id: 1 }
             ]
         }
     );
@@ -63,8 +63,8 @@ function addQueryPlans(db, collectionName) {
             query: { "ir_project_sample_id": 4, "v_call": { "$gte": "TRBV20-1*01", "$lt": "TRBV20-1*02" } },
             indexes: [
                 {
-                    "ir_project_sample_id": 1,
-                    "v_call": 1
+                    ir_project_sample_id: 1,
+                    v_call: 1
                 }
             ]
         }
