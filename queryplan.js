@@ -247,21 +247,21 @@ const commands = [{
     planCacheSetFilter: collectionName,
     query: {
         "ir_project_sample_id": 4,
-        "annotation_tool": 1
+        "ir_annotation_tool": 1
     },
     indexes: [{
         ir_project_sample_id: 1,
-        annotation_tool: 1
+        ir_annotation_tool: 1
     }]
 }, {
     planCacheSetFilter: collectionName,
     query: {
         "ir_project_sample_id": 4,
-        "annotation_tool": "MiXCR"
+        "ir_annotation_tool": "MiXCR"
     },
     indexes: [{
         ir_project_sample_id: 1,
-        annotation_tool: 1
+        ir_annotation_tool: 1
     }]
 }];
 
