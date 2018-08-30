@@ -14,6 +14,7 @@ let dbname = 'ireceptor';
 let collectionName = "sequence";
 let conn = new Mongo();
 let db = conn.getDB("admin");
+let role_queryplan = "queryPlan";
 
 // Create service account
 db.createUser({ user: serviceAccount, pwd: serviceSecret, roles: [{ role: "userAdminAnyDatabase", db: "admin" }] });
@@ -24,7 +25,6 @@ db.grantRolesToUser(serviceAccount, [{ "role": "readWrite", "db": dbname }]);
 db.createUser({ user: guestAccount, pwd: guestSecret, roles: [{ role: "readWrite", db: dbname }] });
 
 // Create a user-define role with the permission needed for to add query plans
-var role_queryplan = "queryPlan";
 db.createRole({ role: role_queryplan, privileges: [{ resource: { db: dbname, collection: "" }, actions: ["planCacheIndexFilter"] }], roles: [] });
 db.grantRolesToUser(serviceAccount, [role_queryplan]);
 
