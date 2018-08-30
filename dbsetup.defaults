@@ -28,59 +28,5 @@ db.createUser({ user: guestAccount, pwd: guestSecret, roles: [{ role: "readWrite
 db.createRole({ role: role_queryplan, privileges: [{ resource: { db: dbname, collection: "" }, actions: ["planCacheIndexFilter"] }], roles: [] });
 db.grantRolesToUser(serviceAccount, [role_queryplan]);
 
-// Create query plans
 db = conn.getDB(dbname);
 db.createCollection(collectionName);
-addIndexes(db, collectionName);
-
-// add the standard set of ireceptor indexes to db.collectionName
-function addIndexes(db, collectionName) {
-    indexes = [{
-        ir_project_sample_id: 1
-    }, {
-        ir_project_sample_id: 1,
-        v_call: 1
-    }, {
-        ir_project_sample_id: 1,
-        j_call: 1
-    }, {
-        ir_project_sample_id: 1,
-        d_call: 1
-    }, {
-        ir_project_sample_id: 1,
-        junction_aa_length: 1
-    }, {
-        ir_annotation_tool: 1
-    }, {
-        ir_project_sample_id: 1,
-        vgene_family: 1
-    }, {
-        ir_project_sample_id: 1,
-        vgene_gene: 1
-    }, {
-        ir_project_sample_id: 1,
-        jgene_gene: 1
-    }, {
-        ir_project_sample_id: 1,
-        jgene_family: 1
-    }, {
-        ir_project_sample_id: 1,
-        dgene_gene: 1
-    }, {
-        ir_project_sample_id: 1,
-        dgene_family: 1
-    }, {
-        ir_project_sample_id: 1,
-        functional: 1
-    }, {
-        ir_project_sample_id: 1,
-        ir_annotation_tool: 1
-    }, {
-        substring: 1,
-        ir_project_sample_id: 1
-    }];
-
-    indexes.forEach((index) => {
-        printjson(db[collectionName].createIndex(index));
-    });
-}
