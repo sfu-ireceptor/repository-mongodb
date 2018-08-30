@@ -58,7 +58,5 @@ const indexes = [{
 
 // main
 for (let index of indexes) {
-    printjson(
-        printjson(db[collectionName].createIndex(index))
-    );
+    printjson(db[collectionName].createIndex(index));
 }
