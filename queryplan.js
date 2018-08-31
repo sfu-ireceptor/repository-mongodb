@@ -1,14 +1,16 @@
 /*
+ *
  * This script is used to set up the iReceptor query plans for the mongo database.
  * 
  * Use the following command to execute this script in order to load the query plans:
- * sudo docker exec -it irdn-mongo mongo --authenticationDatabase admin <dbname> -u <serviceAccount> -p <serviceSecret> /dbsetup/queryplan.js
- * where <dbname> is $MONGODB_DB, <serviceAccount> is $MONGODB_SERVICE_USER, and <serviceSecret> is $MONGODB_SERVICE_SECRET.
+ * "sudo docker exec -it irdn-mongo mongo --authenticationDatabase admin <dbname> -u <serviceAccount> -p <serviceSecret> /dbsetup/queryplan.js"
+ * where <dbname> is the database name, <serviceAccount> is the account name, and <serviceSecret> is the password. 
+ * These correspond to the Turnkey environment variables $MONGODB_DB, $MONGODB_SERVICE_USER, and $MONGODB_SERVICE_SECRET respectively.
+ * 
  */
 
 // collection name to run the commands
 const collectionName = "sequence";
-// list of commands to be run
 const commands = [{
     planCacheSetFilter: collectionName,
     query: {
