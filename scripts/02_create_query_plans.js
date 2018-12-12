@@ -1,18 +1,14 @@
-/*
- *
- * This script is used to set up the iReceptor query plans for the mongo database.
- * 
- * Use the following command to execute this script in order to load the query plans:
- * "sudo docker exec -it irdn-mongo mongo --authenticationDatabase admin <dbname> -u <serviceAccount> -p <serviceSecret> /dbsetup/queryplan.js"
- * where <dbname> is the database name, <serviceAccount> is the account name, and <serviceSecret> is the password. 
- * These correspond to the Turnkey environment variables $MONGODB_DB, $MONGODB_SERVICE_USER, and $MONGODB_SERVICE_SECRET respectively.
- * 
- */
+print("Creating query plans...");
 
-// collection name to run the commands
-const collectionName = "sequence";
-const commands = [{
-    planCacheSetFilter: collectionName,
+var collection = '', l = [];
+
+/****************************************************************************************
+ config */
+
+collection = 'sequences';
+
+l = [{
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4
     },
@@ -20,7 +16,7 @@ const commands = [{
         ir_project_sample_id: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "v_call": {
@@ -38,7 +34,7 @@ const commands = [{
         }
     ]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "v_call": {
@@ -51,7 +47,7 @@ const commands = [{
         v_call: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "d_call": {
@@ -64,7 +60,7 @@ const commands = [{
         d_call: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "j_call": {
@@ -77,7 +73,7 @@ const commands = [{
         j_call: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "v_call": {
@@ -90,7 +86,7 @@ const commands = [{
         v_call: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "v_call": {
@@ -102,7 +98,7 @@ const commands = [{
         v_call: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "d_call": {
@@ -114,7 +110,7 @@ const commands = [{
         d_call: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "j_call": {
@@ -126,7 +122,7 @@ const commands = [{
         j_call: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "junction_aa_length": 8
@@ -136,7 +132,7 @@ const commands = [{
         junction_aa_length: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "substring": "CASSQVGTGVY"
@@ -146,7 +142,7 @@ const commands = [{
         ir_project_sample_id: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "vgene_gene": "TRBV20-1"
@@ -156,7 +152,7 @@ const commands = [{
         vgene_gene: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "vgene_family": "TRBV20"
@@ -166,7 +162,7 @@ const commands = [{
         vgene_family: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "v_call": "TRBV20-1*01"
@@ -176,7 +172,7 @@ const commands = [{
         v_call: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "jgene_gene": "TRBJ2-01"
@@ -186,7 +182,7 @@ const commands = [{
         jgene_gene: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "jgene_family": "TRBJ2"
@@ -196,7 +192,7 @@ const commands = [{
         jgene_family: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "j_call": "TRBJ2-1*01"
@@ -206,7 +202,7 @@ const commands = [{
         j_call: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "dgene_gene": "TRBD2-01"
@@ -216,7 +212,7 @@ const commands = [{
         dgene_gene: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "dgene_family": "TRBD2"
@@ -226,7 +222,7 @@ const commands = [{
         dgene_family: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "d_call": "TRBD2-1*01"
@@ -236,7 +232,7 @@ const commands = [{
         d_call: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "functional": 1
@@ -246,7 +242,7 @@ const commands = [{
         functional: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "ir_annotation_tool": 1
@@ -256,7 +252,7 @@ const commands = [{
         ir_annotation_tool: 1
     }]
 }, {
-    planCacheSetFilter: collectionName,
+    planCacheSetFilter: collection,
     query: {
         "ir_project_sample_id": 4,
         "ir_annotation_tool": "MiXCR"
@@ -267,9 +263,11 @@ const commands = [{
     }]
 }];
 
-// main
-for (let command of commands) {
-    printjson(
-        db.runCommand(command)
-    );
-}
+/****************************************************************************************
+ MAIN */
+
+l.forEach(function(obj, i) {
+    var response = db.runCommand(obj)
+    printjson(response);
+    print('');
+});
