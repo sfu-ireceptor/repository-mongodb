@@ -1,4 +1,4 @@
-print("Creating indexes...");
+print("Creating indexes...\n");
 
 var collection = '', l = [];
 
