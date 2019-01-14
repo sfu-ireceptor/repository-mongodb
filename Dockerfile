@@ -6,3 +6,4 @@ COPY scripts/02_create_query_plans.js /docker-entrypoint-initdb.d/
 
 # add scripts folder
 COPY scripts /app
+
