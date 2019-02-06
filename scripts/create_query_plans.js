@@ -5,7 +5,7 @@ var collection = '', l = [];
 /****************************************************************************************
  config */
 
-collection = 'sequences';
+collection = 'sequence';
 
 load("query_plans.js");
 
