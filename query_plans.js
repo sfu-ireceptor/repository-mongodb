@@ -158,7 +158,7 @@ query_plans = [
 	    },
 	    "projection" : {
 	        "sequence" : 1,
-	        "seq_name" : 1,
+	        "sequence_id" : 1,
 	        "rev_comp" : 1,
 	        "v_call" : 1,
 	        "j_call" : 1,
@@ -202,7 +202,7 @@ query_plans = [
 	    },
         "projection" : {
             "sequence" : 1,
-            "seq_name" : 1,
+            "sequence_id" : 1,
             "rev_comp" : 1,
             "v_call" : 1,
             "j_call" : 1,
@@ -247,7 +247,7 @@ query_plans = [
 	    },
         "projection" : {
             "sequence" : 1,
-            "seq_name" : 1,
+            "sequence_id" : 1,
             "rev_comp" : 1,
             "v_call" : 1,
             "j_call" : 1,
@@ -292,7 +292,7 @@ query_plans = [
 	    },
         "projection" : {
             "sequence" : 1,
-            "seq_name" : 1,
+            "sequence_id" : 1,
             "rev_comp" : 1,
             "v_call" : 1,
             "j_call" : 1,
@@ -337,7 +337,7 @@ query_plans = [
 	    },
         "projection" : {
             "sequence" : 1,
-            "seq_name" : 1,
+            "sequence_id" : 1,
             "rev_comp" : 1,
             "v_call" : 1,
             "j_call" : 1,
@@ -382,7 +382,7 @@ query_plans = [
 	    },
         "projection" : {
             "sequence" : 1,
-            "seq_name" : 1,
+            "sequence_id" : 1,
             "rev_comp" : 1,
             "v_call" : 1,
             "j_call" : 1,
@@ -427,7 +427,7 @@ query_plans = [
 	    },
         "projection" : {
             "sequence" : 1,
-            "seq_name" : 1,
+            "sequence_id" : 1,
             "rev_comp" : 1,
             "v_call" : 1,
             "j_call" : 1,
@@ -472,7 +472,7 @@ query_plans = [
 	    },
         "projection" : {
             "sequence" : 1,
-            "seq_name" : 1,
+            "sequence_id" : 1,
             "rev_comp" : 1,
             "v_call" : 1,
             "j_call" : 1,
@@ -517,7 +517,7 @@ query_plans = [
 	    },
         "projection" : {
             "sequence" : 1,
-            "seq_name" : 1,
+            "sequence_id" : 1,
             "rev_comp" : 1,
             "v_call" : 1,
             "j_call" : 1,
@@ -562,7 +562,7 @@ query_plans = [
 	    },
         "projection" : {
             "sequence" : 1,
-            "seq_name" : 1,
+            "sequence_id" : 1,
             "rev_comp" : 1,
             "v_call" : 1,
             "j_call" : 1,
@@ -607,7 +607,7 @@ query_plans = [
 	    },
         "projection" : {
             "sequence" : 1,
-            "seq_name" : 1,
+            "sequence_id" : 1,
             "rev_comp" : 1,
             "v_call" : 1,
             "j_call" : 1,
@@ -652,7 +652,7 @@ query_plans = [
 	    },
 	    "projection" : {
             "sequence" : 1,
-            "seq_name" : 1,
+            "sequence_id" : 1,
             "rev_comp" : 1,
             "v_call" : 1,
             "j_call" : 1,
@@ -697,7 +697,7 @@ query_plans = [
 	    },
         "projection" : {
             "sequence" : 1,
-            "seq_name" : 1,
+            "sequence_id" : 1,
             "rev_comp" : 1,
             "v_call" : 1,
             "j_call" : 1,
@@ -742,7 +742,7 @@ query_plans = [
 	    },
         "projection" : {
             "sequence" : 1,
-            "seq_name" : 1,
+            "sequence_id" : 1,
             "rev_comp" : 1,
             "v_call" : 1,
             "j_call" : 1,
