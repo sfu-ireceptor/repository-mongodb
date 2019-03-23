@@ -12,10 +12,10 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "junction_aa_length": 8
+            "ir_junction_aa_length": 8
         },
         indexes: [{
-            junction_aa_length: 1,
+            ir_junction_aa_length: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -23,10 +23,10 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "substring": "CASSQVGTGVY"
+            "ir_substring": "CASSQVGTGVY"
         },
         indexes: [{
-            substring: 1,
+            ir_substring: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -34,10 +34,10 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "vgene_gene": "TRBV20-1"
+            "ir_vgene_gene": "TRBV20-1"
         },
         indexes: [{
-            vgene_gene: 1,
+            ir_vgene_gene: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -45,10 +45,10 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "vgene_family": "TRBV20"
+            "ir_vgene_family": "TRBV20"
         },
         indexes: [{
-            vgene_family: 1,
+            ir_vgene_family: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -67,10 +67,10 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "jgene_gene": "TRBJ2-01"
+            "ir_jgene_gene": "TRBJ2-01"
         },
         indexes: [{
-            jgene_gene: 1,
+            ir_jgene_gene: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -78,10 +78,10 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "jgene_family": "TRBJ2"
+            "ir_jgene_family": "TRBJ2"
         },
         indexes: [{
-            jgene_family: 1,
+            ir_jgene_family: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -100,10 +100,10 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "dgene_gene": "TRBD2-01"
+            "ir_dgene_gene": "TRBD2-01"
         },
         indexes: [{
-            dgene_gene: 1,
+            ir_dgene_gene: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -111,10 +111,10 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "dgene_family": "TRBD2"
+            "ir_dgene_family": "TRBD2"
         },
         indexes: [{
-            dgene_family: 1,
+            ir_dgene_family: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -133,10 +133,10 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "functional": 1
+            "productive": 1
         },
         indexes: [{
-            functional: 1,
+            productive: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -198,7 +198,7 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "junction_aa_length": 8
+            "ir_junction_aa_length": 8
         },
         "projection": {
             "sequence": 1,
@@ -235,7 +235,7 @@ query_plans = [
             "ir_project_sample_id": 1
         },
         indexes: [{
-            junction_aa_length: 1,
+            ir_junction_aa_length: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -243,7 +243,7 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "substring": "CASSQVGTGVY"
+            "ir_substring": "CASSQVGTGVY"
         },
         "projection": {
             "sequence": 1,
@@ -280,7 +280,7 @@ query_plans = [
             "ir_project_sample_id": 1
         },
         indexes: [{
-            substring: 1,
+            ir_substring: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -288,7 +288,7 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "vgene_gene": "TRBV20-1"
+            "ir_vgene_gene": "TRBV20-1"
         },
         "projection": {
             "sequence": 1,
@@ -325,7 +325,7 @@ query_plans = [
             "ir_project_sample_id": 1
         },
         indexes: [{
-            vgene_gene: 1,
+            ir_vgene_gene: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -333,7 +333,7 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "vgene_family": "TRBV20"
+            "ir_vgene_family": "TRBV20"
         },
         "projection": {
             "sequence": 1,
@@ -370,7 +370,7 @@ query_plans = [
             "ir_project_sample_id": 1
         },
         indexes: [{
-            vgene_family: 1,
+            ir_vgene_family: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -423,7 +423,7 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "jgene_gene": "TRBJ2-01"
+            "ir_jgene_gene": "TRBJ2-01"
         },
         "projection": {
             "sequence": 1,
@@ -460,7 +460,7 @@ query_plans = [
             "ir_project_sample_id": 1
         },
         indexes: [{
-            jgene_gene: 1,
+            ir_jgene_gene: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -468,7 +468,7 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "jgene_family": "TRBJ2"
+            "ir_jgene_family": "TRBJ2"
         },
         "projection": {
             "sequence": 1,
@@ -505,7 +505,7 @@ query_plans = [
             "ir_project_sample_id": 1
         },
         indexes: [{
-            jgene_family: 1,
+            ir_jgene_family: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -558,7 +558,7 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "dgene_gene": "TRBD2-01"
+            "ir_dgene_gene": "TRBD2-01"
         },
         "projection": {
             "sequence": 1,
@@ -595,7 +595,7 @@ query_plans = [
             "ir_project_sample_id": 1
         },
         indexes: [{
-            dgene_gene: 1,
+            ir_dgene_gene: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -603,7 +603,7 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "dgene_family": "TRBD2"
+            "ir_dgene_family": "TRBD2"
         },
         "projection": {
             "sequence": 1,
@@ -640,7 +640,7 @@ query_plans = [
             "ir_project_sample_id": 1
         },
         indexes: [{
-            dgene_family: 1,
+            ir_dgene_family: 1,
             ir_project_sample_id: 1
         }]
     },
@@ -693,7 +693,7 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "ir_project_sample_id": 4,
-            "functional": 1
+            "productive": 1
         },
         "projection": {
             "sequence": 1,
@@ -730,7 +730,7 @@ query_plans = [
             "ir_project_sample_id": 1
         },
         indexes: [{
-            functional: 1,
+            productive: 1,
             ir_project_sample_id: 1
         }]
     },
