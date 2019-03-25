@@ -17,7 +17,7 @@ indexes.forEach(function(obj, i) {
        t0 = new Date();
        
        print('Creating index: ' + index );
-       db[collection].createIndex(obj, {background: true});
+       db[collection].createIndex(obj);
 
        t1 = new Date();
        duration = (t1  - t0)/1000;
