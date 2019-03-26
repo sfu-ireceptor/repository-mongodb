@@ -13,7 +13,7 @@ load("query_plans.js");
  MAIN */
 
 // hack to make sure the collection exists
-db.[collection].createIndex({ "_id" : 1 });
+db[collection].createIndex({ "_id" : 1 });
 
 // create query plans
 query_plans.forEach(function(obj, i) {
