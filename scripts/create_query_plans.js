@@ -18,6 +18,6 @@ db[collection].createIndex({ "_id" : 1 });
 // create query plans
 query_plans.forEach(function(obj, i) {
     var response = db.runCommand(obj)
-    printjson(response);
-    print('');
+    // printjson(response);
+    // print('');
 });
