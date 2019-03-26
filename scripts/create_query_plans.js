@@ -21,3 +21,5 @@ query_plans.forEach(function(obj, i) {
     // printjson(response);
     // print('');
 });
+
+print("Done");
