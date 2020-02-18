@@ -8,7 +8,7 @@ var collection = '', indexes = [];
 collection = 'sequence';
 
 required_indexes = [
-	{ "ir_project_sample_id" : 1 }
+	{ "repertoire_id" : 1 }
 ];
 
 /****************************************************************************************
