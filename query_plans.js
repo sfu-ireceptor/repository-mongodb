@@ -15,7 +15,7 @@ query_plans = [
             "junction_aa_length": 8
         },
         indexes: [{
-            ir_junction_aa_length: 1,
+            junction_aa_length: 1,
             repertoire_id: 1
         }]
     },
@@ -224,7 +224,7 @@ query_plans = [
             "repertoire_id": 1
         },
         indexes: [{
-            ir_junction_aa_length: 1,
+            junction_aa_length: 1,
             repertoire_id: 1
         }]
     },
