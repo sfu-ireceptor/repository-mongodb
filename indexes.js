@@ -18,5 +18,6 @@ indexes = [
 
 	{ "productive" : 1, "repertoire_id" : 1 },
 
+	{ "junction_aa" : 1, "repertoire_id" : 1 },
 	{ "ir_substring" : 1, "repertoire_id" : 1 }
 ];

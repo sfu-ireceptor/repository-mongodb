@@ -277,6 +277,51 @@ query_plans = [
         planCacheSetFilter: collection,
         query: {
             "repertoire_id": 4,
+            "junction_aa": "CASSQVGTGVY"
+        },
+        "projection": {
+            "sequence": 1,
+            "sequence_id": 1,
+            "rev_comp": 1,
+            "v_call": 1,
+            "j_call": 1,
+            "d_call": 1,
+            "v_score": 1,
+            "junction": 1,
+            "junction_length": 1,
+            "cdr1region_sequence_aa": 1,
+            "cdr2region_sequence_aa": 1,
+            "cdr3region_sequence_aa": 1,
+            "junction_aa": 1,
+            "junction_aa_length": 1,
+            "functional": 1,
+            "subject_id": 1,
+            "sex": 1,
+            "organism": 1,
+            "ethnicity": 1,
+            "study_title": 1,
+            "study_id": 1,
+            "study_description": 1,
+            "lab_name": 1,
+            "disease_state_sample": 1,
+            "study_group_description": 1,
+            "sample_id": 1,
+            "template_class": 1,
+            "tissue": 1,
+            "cell_subset": 1,
+            "sequencing_platform": 1,
+            "cell_phenotype": 1,
+            "repertoire_id": 1
+        },
+        indexes: [{
+            junction_aa: 1,
+            repertoire_id: 1
+        }]
+    },
+    {
+        planCacheSetFilter: collection,
+        query: {
+            "repertoire_id": 4,
             "ir_vgene_gene": "TRBV20-1"
         },
         "projection": {
