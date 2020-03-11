@@ -1,13 +1,8 @@
-# Base MongoDB image
 FROM mongo:3
 
-LABEL maintainer.first="VDJServer <vdjserver@utsouthwestern.edu>" \
-      maintainer.second="iReceptor <ireceptor@sfu.ca>"
+# add current folder to Docker container
+COPY . /app
 
-# PROXY: uncomment these and define if building behind a proxy
-# These are UTSW proxy settings
-#ENV http_proxy 'http://proxy.swmed.edu:3128/'
-#ENV https_proxy 'https://proxy.swmed.edu:3128/'
-#ENV HTTP_PROXY 'http://proxy.swmed.edu:3128/'
-#ENV HTTPS_PROXY 'https://proxy.swmed.edu:3128/'
-
+# set the working directory so the indexes/query plans creation scripts
+# will be able to find the indexes/query plans files.
+WORKDIR /app
