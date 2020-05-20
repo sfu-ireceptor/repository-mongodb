@@ -8,7 +8,8 @@ var collection = '', indexes = [];
 collection = 'sequence';
 
 required_indexes = [
-	{ "repertoire_id" : 1, "ir_annotation_set_metadata_id_rearrangement" : 1}
+	{ "repertoire_id" : 1},
+	{ "ir_annotation_set_metadata_id_rearrangement" : 1}
 ];
 
 /****************************************************************************************
