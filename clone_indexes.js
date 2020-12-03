@@ -16,8 +16,6 @@ indexes = [
 	{ "ir_dgene_gene" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
 	{ "ir_dgene_family" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
 
-	{ "productive" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
-
 	{ "junction_aa" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
 	{ "ir_substring" : 1, "ir_annotation_set_metadata_id_clone" : 1 }
 ];
