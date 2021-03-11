@@ -5,7 +5,7 @@ var collection = '', indexes = [];
 /****************************************************************************************
  config */
 
-collection = 'sequence';
+collection = 'clone';
 
 required_indexes = [
 	{ "repertoire_id" : 1},
