@@ -9,7 +9,7 @@ collection = 'sequence';
 
 required_indexes = [
 	{ "repertoire_id" : 1},
-	{ "ir_annotation_set_metadata_id_rearrangement" : 1}
+	{ "ir_annotation_set_metadata_id_clone" : 1}
 ];
 
 /****************************************************************************************
