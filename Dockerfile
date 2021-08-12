@@ -1,4 +1,4 @@
-FROM mongo:4.2
+FROM mongo:4.4
 
 # add current folder to Docker container
 COPY . /app
