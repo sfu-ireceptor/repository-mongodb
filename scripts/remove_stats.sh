@@ -6,4 +6,7 @@ then
     exit
 fi
 
-mongo --quiet $MONGO_INITDB_DATABASE --eval "var study_id = '$1'" /data/src/repository-mongodb/scripts/remove_stats.js
+SCRIPT_DIR=`dirname "$0"`
+echo "Running remove stats from $SCRIPT_DIR"
+
+mongo --quiet $MONGO_INITDB_DATABASE --eval "var study_id = '$1'" ${SCRIPT_DIR}/remove_stats.js
