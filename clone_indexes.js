@@ -9,13 +9,13 @@ indexes = [
 
 	{ "junction_aa_length" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
 
-	{ "ir_jgene_gene" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
-	{ "ir_jgene_family" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
-	{ "ir_vgene_gene" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
-	{ "ir_vgene_family" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
-	{ "ir_dgene_gene" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
-	{ "ir_dgene_family" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
+	{ "ir_jgene_gene_clone" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
+	{ "ir_jgene_family_clone" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
+	{ "ir_vgene_gene_clone" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
+	{ "ir_vgene_family_clone" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
+	{ "ir_dgene_gene_clone" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
+	{ "ir_dgene_family_clone" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
 
 	{ "junction_aa" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
-	{ "ir_substring" : 1, "ir_annotation_set_metadata_id_clone" : 1 }
+	{ "ir_substring_clone" : 1, "ir_annotation_set_metadata_id_clone" : 1 }
 ];
