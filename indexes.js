@@ -18,6 +18,11 @@ indexes = [
 
 	{ "productive" : 1, "repertoire_id" : 1 },
 
+	{ "cell_id" : 1, "repertoire_id" : 1 },
+	{ "clone_id" : 1, "repertoire_id" : 1 },
+	{ "duplicate_count" : 1, "repertoire_id" : 1 },
+	{ "consensus_count" : 1, "repertoire_id" : 1 },
+
 	{ "junction_aa" : 1, "repertoire_id" : 1 },
 	{ "ir_substring" : 1, "repertoire_id" : 1 }
 ];
