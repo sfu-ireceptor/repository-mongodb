@@ -17,6 +17,7 @@ indexes = [
 	{ "ir_dgene_family" : 1, "repertoire_id" : 1 },
 
 	{ "productive" : 1, "repertoire_id" : 1 },
+	{ "productive" : 1, "ir_annotation_set_metadata_id_rearrangement" : 1 },
 
 	{ "cell_id" : 1, "repertoire_id" : 1 },
 	{ "clone_id" : 1, "repertoire_id" : 1 },
