@@ -2,6 +2,7 @@ indexes = [
 	{ "_id" : 1 },
 
 	{ "repertoire_id" : 1 },
+	{ "seqeunce_id" : 1 },
 
 	{ "v_call" : 1, "repertoire_id" : 1 },
 	{ "j_call" : 1, "repertoire_id" : 1 },
