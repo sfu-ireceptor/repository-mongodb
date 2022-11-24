@@ -1,6 +1,7 @@
 indexes = [
 	{ "_id" : 1 },
 
+	{ "cell_id" : 1 },
 	{ "ir_annotation_set_metadata_id_cell" : 1 },
 
 	{ "repertoire_id" : 1, "ir_annotation_set_metadata_id_cell" : 1 },
