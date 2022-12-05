@@ -2,6 +2,7 @@ indexes = [
 	{ "_id" : 1 },
 
 	{ "repertoire_id" : 1 },
+	{ "sequence_id" : 1 },
 
 	{ "v_call" : 1, "repertoire_id" : 1 },
 	{ "j_call" : 1, "repertoire_id" : 1 },
@@ -17,6 +18,7 @@ indexes = [
 	{ "ir_dgene_family" : 1, "repertoire_id" : 1 },
 
 	{ "productive" : 1, "repertoire_id" : 1 },
+	{ "productive" : 1, "ir_annotation_set_metadata_id_rearrangement" : 1 },
 
 	{ "cell_id" : 1, "repertoire_id" : 1 },
 	{ "clone_id" : 1, "repertoire_id" : 1 },

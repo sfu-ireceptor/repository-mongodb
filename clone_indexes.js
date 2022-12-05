@@ -1,6 +1,7 @@
 indexes = [
 	{ "_id" : 1 },
 
+	{ "clone_id" : 1 },
 	{ "ir_annotation_set_metadata_id_clone" : 1 },
 
 	{ "v_call" : 1, "ir_annotation_set_metadata_id_clone" : 1 },
