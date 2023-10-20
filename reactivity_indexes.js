@@ -1,0 +1,25 @@
+indexes = [
+	{ "_id" : 1 },
+
+	{ "reactivity_id" : 1 },
+	{ "ir_receptor_id" : 1 },
+	{ "ir_cell_id" : 1 },
+	{ "ligand_type" : 1 },
+	{ "antigen_type" : 1 },
+	{ "antigen" : 1 },
+	{ "antigen_id" : 1 },
+	{ "antigen_source_species" : 1 },
+	{ "antigen_source_species_id" : 1 },
+	{ "peptide_string" : 1 },
+	{ "mhc_class" : 1 },
+	{ "mhc_gene_1" : 1 },
+	{ "mhc_gene_1_id" : 1 },
+	{ "mhc_allele_1" : 1 },
+	{ "mhc_gene_2" : 1 },
+	{ "mhc_gene_2_id" : 1 },
+	{ "mhc_allele_2" : 1 },
+	{ "reactivity_method" : 1 },
+	{ "reactivity_readout" : 1 },
+	{ "reactivity_value" : 1 },
+	{ "reactivity_unit" : 1 }
+];
