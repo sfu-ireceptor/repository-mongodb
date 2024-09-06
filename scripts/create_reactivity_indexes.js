@@ -5,9 +5,9 @@ var collection = '';
 /****************************************************************************************
  config */
 
-collection = 'clone';
+collection = 'reactivity';
 
-load("clone_indexes.js");
+load("reactivity_indexes.js");
 
 /****************************************************************************************
  MAIN */
