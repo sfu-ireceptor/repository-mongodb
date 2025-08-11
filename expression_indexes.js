@@ -2,6 +2,7 @@ indexes = [
 	{ "_id" : 1 },
 
 	{ "expression_id" : 1 },
+	{ "cell_id" : 1 },
 	{ "ir_annotation_set_metadata_id_expression" : 1 },
 
 	{ "repertoire_id" : 1, "ir_annotation_set_metadata_id_expression" : 1 },
