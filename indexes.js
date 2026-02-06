@@ -26,5 +26,13 @@ indexes = [
 	{ "consensus_count" : 1, "repertoire_id" : 1 },
 
 	{ "junction_aa" : 1, "repertoire_id" : 1 },
-	{ "ir_substring" : 1, "repertoire_id" : 1 }
+	{ "ir_substring" : 1, "repertoire_id" : 1 },
+
+	{ "reactivity_ref" : 1, "repertoire_id" : 1 },
+	{ "ir_antigen_ref" : 1, "repertoire_id" : 1 },
+	{ "ir_species_ref" : 1, "repertoire_id" : 1 },
+	{ "ir_epitope_ref" : 1, "repertoire_id" : 1 },
+	{ "ir_reactivity_method" : 1, "repertoire_id" : 1 },
+	{ "ir_mhc_name" : 1, "repertoire_id" : 1 },
+	{ "ir_mhc_ref" : 1, "repertoire_id" : 1 }
 ];
