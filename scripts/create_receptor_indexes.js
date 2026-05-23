@@ -5,9 +5,9 @@ var collection = '';
 /****************************************************************************************
  config */
 
-collection = 'sequence';
+collection = 'receptor';
 
-load("indexes.js");
+load("receptor_indexes.js");
 
 /****************************************************************************************
  MAIN */
@@ -16,7 +16,7 @@ indexes.forEach(function(obj, i) {
        var index = tojson(obj);
        t0 = new Date();
        
-       print('Creating index: ' + index );
+       print('Creating index: ' + index + ' at ' + t0);
        db[collection].createIndex(obj);
 
        t1 = new Date();
